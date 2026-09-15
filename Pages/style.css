@@ -1,0 +1,211 @@
+/* General Layout & Colors */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 30px 10%;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #2c3e50;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color:#4b6b54;
+}
+
+.cart-icon {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section with Background Image */
+.hero-section {
+    background: url('../Pictures/banniere_eqqualberry.webp') center/cover no-repeat #e8ece9;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color:black;
+    margin-bottom: 20px;
+}
+
+.section-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+/* Social links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #eaeaea;
+    padding: 30px 10%;
+    margin-top: auto;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #666;
+    line-height: 1.8;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+/* General Buttons & Forms */
+.btn {
+    background-color: #4b6b54;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #395240;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+/* Page Specific Grid Layouts */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Cart Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
